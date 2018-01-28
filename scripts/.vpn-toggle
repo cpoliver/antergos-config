@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# list of configured VPNs: `nmcli con show | grep vpn`
+
+uuid="049b2d60-b816-4640-b33e-659920598c19"
+
+active_uuid=''
+for r in $(nmcli -t -f UUID,TYPE con show --active); do
+  ctype="${r##*:}"
+  if [ "$ctype" = 'vpn' ]; then
+    active_uuid="${r%%:*}"
+    nmcli con down uuid $active_uuid
+    break
+  fi
+done
+
+[ -z "$active_uuid" ] && nmcli con up uuid $uuid

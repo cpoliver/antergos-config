@@ -99,6 +99,7 @@ ys guake
 ys terminator
 
 # apps: utils
+ys arandr
 ys filebot
 ys font-manager
 ys gpick

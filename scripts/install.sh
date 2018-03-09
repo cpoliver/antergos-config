@@ -38,6 +38,7 @@ ys cmake
 ys curl
 ys httpie
 ys massren
+ys ranger
 ys tig
 ys the_silver_searcher
 ys tree

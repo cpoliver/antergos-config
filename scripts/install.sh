@@ -104,6 +104,7 @@ ys filebot
 ys font-manager
 ys gpick
 ys insync
+ys ntfs-3g
 ys peek-git
 ys pinta
 ys xcape

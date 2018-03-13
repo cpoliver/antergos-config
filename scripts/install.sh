@@ -107,6 +107,7 @@ ys insync
 ys ntfs-3g
 ys peek-git
 ys pinta
+ys quicksynergy
 ys xcape
 
 # ui: tweaks

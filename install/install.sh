@@ -3,37 +3,14 @@ mkdir ~/yay_temp
 git clone https://aur.archlinux.org/yay.git ~/yay_temp
 cd ~/yay_temp/yay
 makepkg -si
+cd ~
 rm -rf ~/yay_temp
 
 # temp aliases for script (rework to have zsh and dotfiles installed instead)
 alias ys="yay -S --noconfirm"
 alias snig="sudo npm install -g"
 
-## REBOOT REQUIRED
-
-# vmware tools: preferred
-#git clone https://github.com/rasa/vmware-tools-patches.git
-#cd vmware-tools-patches
-#./patched-open-vm-tools.sh
-
-# vmware tools: alternative
-#ys open-vm-tools gtkmm libxtst xf86-video-vmware
-#sudo systemctl start vmware-vmblock-fuse.service
-
-# native install: nvidia
-#ys nvidia-installer
-#sudo nvidia-installer
-
-#sudo systemctl reboot
-
-## /REBOOT REQUIRED
-
-# temp aliases for script (rework to have zsh and dotfiles installed instead)
-alias ys="yay -S --noconfirm"
-alias snig="sudo npm install -g"
-
 # cli
-ys ack
 ys cmake
 ys curl
 ys httpie
@@ -56,7 +33,7 @@ ys python
 ys ruby
 
 # node
-ys node
+ys nodejs
 ys npm
 ys yarn
 
@@ -72,6 +49,7 @@ snig diff-so-fancy
 snig flow-bin
 snig gulp
 snig nodemon
+snig npx
 snig svgo
 
 # apps: browsers
@@ -82,20 +60,23 @@ ys vivaldi
 # apps: comms
 ys skypeforlinux-stable-bin
 ys slack-desktop
-ys wavebox
+ys wavebox-bin
 
 # apps: dev
+ys code
 ys emacs && git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-ys sublime-text-dev
-ys vim
-ys visual-studio-code-bin
+ys nvim
 
 # apps: media
 ys spotify
 ys vlc
 
+# apps: design/photo/video
+ys figma-linux-bin
+ys peek
+ys pinta
+
 # apps: terminal
-ys guake
 ys terminator
 
 # apps: utils
@@ -104,29 +85,8 @@ ys filebot
 ys font-manager
 ys gpick
 ys insync
-ys peek-git
-ys pinta
+ys ranger
 ys xcape
-
-# ui: tweaks
-ys gnome-tweak-tool
-ys gnome-shell-extension-clipboard-indicator-git
-ys gnome-shell-extension-multi-monitors-add-on-git
-ys gnome-shell-extension-openweather-git
-ys gnome-shell-pomodoro
-
-git clone https://github.com/gTile/gTile.git ~/.local/share/gnome-shell/extensions/gTile@vibou
-
-# ui: themes
-ys adapta-gtk-theme
-ys equilux-theme
-ys gtk-theme-arc-git
-ys materia-theme
-
-# ui: icons
-ys paper-icon-theme
-ys papirus-icon-theme-git
-ys capitaine-cursors
 
 # shell: zsh, oh-my-zsh
 ys zsh
@@ -139,13 +99,23 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 # fonts
 ys ttf-ms-fonts
 ys ttf-roboto
+# TODO: symlink or copy fonts from google drive
 
-# TODO: set vim to default editor
-# TODO: install and configure xcape
+# visual tweaks
+ys dmenu
+ys i3lock
+ys i3status
 
-# TODO: dotfiles
+# create code directories
+mkdir ~/code
+mkdir ~/code/_cpoliver
+mkdir ~/code/_casumo
+mkdir ~/code/_ecoshare
+mkdir ~/code/_sandbox
+mkdir ~/code/_misc
+
+# TODO: clone and symlink dotfiles
 # - .zshrc
+# - .xinitrc
+# - .gitignore
 # - gitconfig
-# - global gitignore
-
-# TODO: script gnome preferences and theme settings

@@ -26,6 +26,10 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
+# aliases: clipboard
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
 # aliases: casumo
 alias cap='casumo-proxy'
 alias gdev='gulp dev'

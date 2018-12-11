@@ -10,6 +10,9 @@ rm -rf ~/yay_temp
 alias ys="yay -S --noconfirm"
 alias snig="sudo npm install -g"
 
+# ntfs driver
+ys ntfs-3g
+
 # cli
 ys cmake
 ys curl
@@ -73,8 +76,10 @@ ys vlc
 
 # apps: design/photo/video
 ys figma-linux-bin
+ys maim
 ys peek
 ys pinta
+ys shutter
 
 # apps: terminal
 ys terminator
@@ -101,10 +106,11 @@ ys ttf-ms-fonts
 ys ttf-roboto
 # TODO: symlink or copy fonts from google drive
 
-# visual tweaks
+# 13 customisation
 ys dmenu
 ys i3lock
 ys i3status
+ys i3-gaps
 
 # create code directories
 mkdir ~/code

@@ -106,11 +106,11 @@ ys ttf-ms-fonts
 ys ttf-roboto
 # TODO: symlink or copy fonts from google drive
 
-# 13 customisation
-ys dmenu
+# i3 customisation
 ys i3lock
 ys i3status
 ys i3-gaps
+ys rofi
 
 # create code directories
 mkdir ~/code

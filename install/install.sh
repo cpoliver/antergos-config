@@ -10,6 +10,10 @@ rm -rf ~/yay_temp
 alias ys="yay -S --noconfirm"
 alias snig="sudo npm install -g"
 
+# bluetooth
+ys bluez
+ys blueman
+
 # ntfs driver
 ys ntfs-3g
 

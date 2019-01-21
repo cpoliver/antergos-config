@@ -80,6 +80,7 @@ ys vlc
 
 # apps: design/photo/video
 ys figma-linux-bin
+ys flameshot
 ys maim
 ys peek
 ys pinta

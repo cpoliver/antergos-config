@@ -60,8 +60,10 @@ snig npx
 snig svgo
 
 # apps: browsers
+ys chromium
 ys firefox
 ys opera
+ys tor-browser
 ys vivaldi
 
 # apps: comms
@@ -95,6 +97,7 @@ ys filebot
 ys font-manager
 ys gpick
 ys insync
+ys nordvpn-bin
 ys ranger
 ys xcape
 

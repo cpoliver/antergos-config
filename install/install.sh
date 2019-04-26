@@ -91,14 +91,17 @@ ys shutter
 # apps: terminal
 ys terminator
 
+# apps: file management
+ys community/nemo
+ys filebot
+ys insync
+ys ranger
+
 # apps: utils
 ys arandr
-ys filebot
 ys font-manager
 ys gpick
-ys insync
 ys nordvpn-bin
-ys ranger
 ys xcape
 
 # shell: zsh, oh-my-zsh

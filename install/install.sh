@@ -18,10 +18,12 @@ ys blueman
 ys ntfs-3g
 
 # cli
+ys bat
 ys cmake
 ys curl
 ys httpie
 ys massren
+ys openssh
 ys tig
 ys the_silver_searcher
 ys tree
@@ -33,6 +35,10 @@ ys xclip
 ys docker
 sudo systemctl enable docker
 sudo usermod -a -G docker $USER
+
+# git
+ys git
+ys hub
 
 # programming languages
 ys ghc
